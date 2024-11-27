@@ -1,0 +1,22 @@
+// Pour le JS on veux :
+// Entrer un nom d'utilisateur dans le account login
+// Passer d'un classe a une autre pour les questions => (.container) le remplacer par (.question)
+
+// délimiter le nombre de questions, 10 par exemple.
+// pour selectionner un pays mettre une animation de selection pour les backgrounds.
+// fenetre avec (la question, proposition de réponse(4 choix on ou peut mettre la fonction "hover" ou "survol" sur background des réponses), un boutton "OK" pour valider
+
+// Une fois le choix valider, réponse "vrai' ou "fausse"(animation pour le "vrai&faux"), ensuite passer a une autre question.
+// Si pas de réponse vrai ou faux au bout des 10s changement de questions
+// A la fin des 10 questions calcul de points vrai&faux et afficher le score avec un nouvelle fenetre
+// Dans cette fenetre on peux y afficher "Félcitation vous avez fait ... pts (>=5pts)" ou "Dommage vous avez fait ... pts(<=5pts) (Try again !)"
+
+// 2 . Parti Asigne "Timer & compteur de point"
+
+// Introduire un timer et lui mettre une valeur de 10s max
+// Quand le timer tombe a zero changement de question obligatoirement meme si la reponse n'a pas été valider
+// Retour du timer a 10s a chaque nouvelle question
+// Faire une animation du timer quand il passe a 3 secondes
+
+// Introduire un compteur de points .../10
+// Chaque question vrai = 1 points faux = 0 points
