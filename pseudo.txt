@@ -4,7 +4,7 @@
 
 // délimiter le nombre de questions, 10 par exemple.
 // pour selectionner un pays mettre une animation de selection pour les backgrounds.
-// fenetre avec (la question, proposition de réponse(4 choix on ou peut mettre la fonction "hover" ou "survol" sur background des réponses), un boutton "OK" pour valider
+// fenetre avec (la question, proposition de réponse(4 choix en boutton), un boutton "OK" pour valider
 
 // Une fois le choix valider, réponse "vrai' ou "fausse"(animation pour le "vrai&faux"), ensuite passer a une autre question.
 // Si pas de réponse vrai ou faux au bout des 10s changement de questions
