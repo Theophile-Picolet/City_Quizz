@@ -1,3 +1,4 @@
+
 const accountButton = document.querySelector(".account");
 const welcome = document.querySelector(".user");
 accountButton.addEventListener("click", function () {
@@ -26,6 +27,7 @@ const australia = document.querySelector(".australia");
 australia.addEventListener("click", function () {
     main.style.display = 'none';
 });
+
 
 
 
