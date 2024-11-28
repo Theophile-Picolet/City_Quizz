@@ -1,0 +1,52 @@
+// Pour le JS on veux :
+// Cliquer sur account et rentrer son nom utilisateur//
+
+// Modifier le titre d'acceuil bienvenue avec ajout du nom 
+
+// Quand je clique sur un bloc pays, tous les blocs pays disparaissent et faire apparaitre un bloc de question
+// Démarrer le timer avec un délai de (20 secondes) et début des questions
+// Créer un compteur de point sur la fenetre des questions
+// En fontion du bloc choisi => afficher la question 1 et avoir 4 propositions de réponses
+
+// Animation sur les boutons réponse quand on clique dessus et déclenche 1 des 3 actions :
+// Si la réponse est bonne animation reponse correct, 1 point
+// Si la reponse est fausse animation reponse fausse, 0 point
+// Si pas de réponse = 'Time is Over'
+//  +1 au compteur de scrore si bonne reponse et nul si faux
+// Afficher question suivante
+
+// Répeter ces actions jusqu'a la fin du questionnaire
+
+// Animation de fin de jeux avec affichage du score
+
+// Fermeture de la fenetre question
+// Réapparition des blocs pays
+// 
+
+
+
+
+
+// Passer d'un classe a une autre pour les questions => (.container) le remplacer par (.question)
+
+// délimiter le nombre de questions, 10 par exemple.
+// pour selectionner un pays mettre une animation de selection pour les backgrounds.
+// fenetre avec la question, proposition de réponse(4 choix en boutton) et un boutton "OK" pour valider
+
+// Une fois le choix valider, réponse "vrai' ou "fausse"(animation pour le "vrai&faux"), ensuite passer a une autre question.
+// Si pas de réponse vrai ou faux au bout des 10s changement de questions
+// A la fin des 10 questions calcul de points vrai&faux et afficher le score avec un nouvelle fenetre
+// Dans cette fenetre on peux y afficher "Félcitation vous avez fait ... pts (>=5pts)" ou "Dommage vous avez fait ... pts(<=5pts) (Try again !)"
+
+// 2 . Parti Asigne "Timer & compteur de point"
+
+// Introduire un timer et lui mettre une valeur de 10s max
+// Quand le timer tombe a zero changement de question obligatoirement meme si la reponse n'a pas été valider
+// Retour du timer a 10s a chaque nouvelle question
+// Faire une animation du timer quand il passe a 3 secondes
+
+// Introduire un compteur de points .../10
+// Chaque question vrai = 1 points faux = 0 points
+
+
+Pour le html:
