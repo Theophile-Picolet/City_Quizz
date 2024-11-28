@@ -1,5 +1,5 @@
 // Pour le JS on veux :
-// Cliquer sur account et rentrer son nom utilisateur
+// Cliquer sur account et rentrer son nom utilisateur//
 
 // Modifier le titre d'acceuil bienvenue avec ajout du nom 
 

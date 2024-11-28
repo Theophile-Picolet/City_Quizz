@@ -8,11 +8,11 @@
 }
 
 a {
-    color: inherit;
+  color: inherit;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .header {
@@ -86,13 +86,52 @@ a:hover {
     height: auto;
     display: none;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: url(./WorldMap.jpg);
-    background-position: center;
-    background-size: 100%;
-    background-position: fixed;
+    justify-content: space-around;
+    gap: 70rem;
+    width: 100%;
+    color: #f9edc8;
+    .account {
+      font-size: 2rem;
+    }
+  }
+}
 
+.button .baseline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.baseline div {
+  font-size: 2rem;
+  color: #f9edc8;
+  letter-spacing: 4px;
+  text-shadow: #544135 2px 2px, #4f3f34 -2px 2px, #4f3f34 -2px -2px,
+    #4f3f4f 2px -2px;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 500;
+  color: #f9edc8;
+  text-shadow: #544135 5px 5px, #4f3f34 -5px 5px, #4f3f34 -5px -5px,
+    #4f3f4f 5px -5px;
+  letter-spacing: 10px;
+}
+
+.main {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./WorldMap.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-position: fixed;
 }
 
 .Quizz {
@@ -158,14 +197,37 @@ a:hover {
 
 
 .container {
-    width: auto;
-    height:auto;
-    margin: 5rem 0;
+  width: auto;
+  height: auto;
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10rem;
+
+  section {
+    margin: 0;
+    width: 500px;
+    height: 280px;
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 50;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    gap: 10rem;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: rgb(5, 5, 5) 0px 4px 8px, rgb(0, 0, 0) 10px 7px 13px -6px,
+      rgba(2, 2, 2, 0.357) 0px -6px 0px inset;
+    p {
+      font-size: 5rem;
+      letter-spacing: 5px;
+      text-shadow: #000000 2px 2px, #010101 -2px 2px, #000000 -2px -2px,
+        #000000 2px -2px;
+    }
+  }
 
     section {
         margin: 0;
