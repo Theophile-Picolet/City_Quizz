@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
+    font-family: "Source Sans 3", sans-serif;
 }
 
 a {
@@ -17,30 +18,40 @@ a:hover {
 .header {
     padding-top: 1rem;
     background: #018c9b;
-    text-shadow: #4f3f34 1px 1px, #4f3f34 -1px 1px, #4f3f34 -1px -1px, #4f3f4f 1px -1px;;
-    height: 14rem;
+    height: 19rem;
     width: auto;
     nav {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        gap: 17rem;
+        gap: 15rem;
         width: 100%;
         color: #F9EDC8;
         padding-bottom: 1rem;
         .logo {
             background-image: url(./Logo.png);
-            width: 3rem;
-            height: 3rem;
+            opacity: 0.7;
+            width:4rem;
+            height: 4rem;
+            background-size: 100%;
+            background-position: center;
+            box-shadow: rgba(5, 5, 5, 0.372) 0px 4px 8px, rgb(0, 0, 0) 10px 7px 13px -6px, rgba(2, 2, 2, 0.172) 0px -6px 0px inset;
+            border-radius: 100%;
+            
+            
+           
         }
         .account {
             font-size: 1rem;
-            padding: 1rem;
-            background: #4f3f34;
-            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            background: #F9EDC8;
+            color: #4f3f34 ;
+            font-weight: 700;
+            border: 3px solid #4f3f34;
+            border-radius: 25px;
             box-shadow: rgba(5, 5, 5, 0.678) 0px 4px 8px, rgba(0, 0, 0, 0.39) 10px 7px 13px -6px, rgba(2, 2, 2, 0.175) 0px -6px 0px inset;
-            border: 1px solid black;
+            
         }
         
     }
@@ -58,21 +69,22 @@ a:hover {
     font-size: 1.5rem;
     color: #F9EDC8;
     letter-spacing: 4px;
-    text-shadow: #544135 2px 2px, #4f3f34 -2px 2px, #4f3f34 -2px -2px, #4f3f4f 2px -2px;
+    text-shadow: #544135 3px 3px, #4f3f3400 -3px 3px, #4f3f3400 -3px -3px, #4f3f3400 3px -3px;
  }
 
  h1 {
     font-size: 4rem;
     font-weight: 500;
+    padding-bottom: 1rem;
     color: #F9EDC8;
-    text-shadow: #544135 5px 5px, #4f3f34 -5px 5px, #4f3f34 -5px -5px, #4f3f4f 5px -5px;
-    letter-spacing: 10px;
+    text-shadow: #544135 5px 5px, #4f3f3400 -5px 5px, #4f3f3400 -5px -5px, #4f3f3400 5px -5px;
+    letter-spacing: 5px
  }
 
 .main {
     width: auto;
     height: auto;
-    display: none;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -84,34 +96,66 @@ a:hover {
 }
 
 .Quizz {
-    height: auto;
-    width: 68vh;
     margin: 0;
-    border: 1px solid black;
-    background: rgb(255, 255, 255);
-    display: flex;
+    height: 40rem;
+    background-image: url(./WorldMap.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-position: fixed;
+    display: none;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    }
+    .jeu {
+        border: 3px solid #4f3f34;
+        border-radius: 50px;
+        background: #f9edc8d7;
+        padding: 1rem 0 2rem;
+    }
     .question {
-        width: 68.5vh;
-        display: grid ;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        min-width: 68vh;
         height: 15rem;
-        background: #F9EDC8;
+        text-align: center;
+        padding-top: 2rem;
+        color: #4f3f34;
+        font-size: 1.5rem;
+
     }
     .reponse {
-        width: 68.5vh;
-        background: #018c9b;
+        min-width: 68vh;
         height: 10rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 1fr;
+        padding: 0 4rem;
+        justify-items: center;
+        align-items: center;
+        
+        button {
+            width: 7rem;
+            height: 3rem;
+            background: #4f3f34;
+            border-radius: 15px;
+            box-shadow: rgba(5, 5, 5, 0.318) 0px 4px 8px, rgba(0, 0, 0, 0.27) 10px 7px 13px -6px, rgba(2, 2, 2, 0.175) 0px -6px 0px inset;
+            color: #F9EDC8;
+        }
     }
     .aside {
-    width: 68.5vh;
-    background: #544135;
+        min-width: 68vh;
+    display: flex;
+    height: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+    .timer, .point {
+        width: 50px;
+        color: #018c9b;
+        font-size: 2rem;
+        
+    }
    
  }
-}
+
 
 .container {
     width: auto;
@@ -135,6 +179,7 @@ a:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        border: 1px solid #4f3f34;
         border-radius: 30px;
         box-shadow: rgb(5, 5, 5) 0px 4px 8px, rgb(0, 0, 0) 10px 7px 13px -6px, rgba(2, 2, 2, 0.357) 0px -6px 0px inset;
         p {
@@ -177,27 +222,19 @@ a:hover {
 }
 
     .footer {
-        height: 5rem;
         display: flex;
         justify-content: center;
         align-items: center;
         background: #018c9b;
         color:#F9EDC8 ;
+        height: 5rem;
     }
 
     @media only screen and (min-width:68.5vh) {
-        a {
-            color: inherit;
-        }
-        
-        a:hover {
-            text-decoration: none;
-        }
+ 
         
         .header {
-            background: #018c9b;
-            text-shadow: #4f3f34 1px 1px, #4f3f34 -1px 1px, #4f3f34 -1px -1px, #4f3f4f 1px -1px;;
-            height: 14rem;
+            height: 24rem;
             width: auto;
             nav {
                 display: flex;
@@ -207,118 +244,41 @@ a:hover {
                 width: 100%;
                 color: #F9EDC8;
                 .account {
-                    font-size: 2rem;
-                }
-                
+                    font-size: 1.5rem;
+                    padding: 1rem 2rem;
+                }      
             }
          }
-        
-        .baseline {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: 1rem;  
+
+         .header nav {
+            padding-top: 2rem;
+            padding-bottom: 0;
          }
+
         
          .baseline div {
             font-size: 2rem;
-            color: #F9EDC8;
+            padding: 1rem 0;
             letter-spacing: 4px;
-            text-shadow: #544135 2px 2px, #4f3f34 -2px 2px, #4f3f34 -2px -2px, #4f3f4f 2px -2px;
+            text-shadow: #544135 3px 3px, #4f3f3400 -3px 3px, #4f3f3400 -3px -3px, #4f3f3400 3px -3px;
          }
         
          h1 {
             font-size: 6rem;
             font-weight: 500;
-            color: #F9EDC8;
-            text-shadow: #544135 5px 5px, #4f3f34 -5px 5px, #4f3f34 -5px -5px, #4f3f4f 5px -5px;
             letter-spacing: 10px;
+            padding: 0;
          }
         
         .main {
-            width: auto;
-            height: auto;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            background-image: url(./WorldMap.jpg);
-            background-position: center;
-            background-size: 100%;
-            background-position: fixed;
-        
+            display: flex; 
         }
         
-        .container {
-            width: auto;
-            height:auto;
-            margin: 5rem 0;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10rem;
-        
-            section {
-                margin: 0;
-                width: 500px;
-                height: 280px;
-                text-align: center;
-                font-size: 5rem;
-                color: rgb(255, 255, 255);
-                font-weight: 50;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                border-radius: 30px;
-                box-shadow: rgb(5, 5, 5) 0px 4px 8px, rgb(0, 0, 0) 10px 7px 13px -6px, rgba(2, 2, 2, 0.357) 0px -6px 0px inset;
-                p {
-                    font-size: 5rem;
-                    letter-spacing: 5px;
-                    text-shadow: #000000 2px 2px, #010101 -2px 2px, #000000 -2px -2px, #000000 2px -2px;
-                }
-            }
-        
-            .europe {
-                background-image: url(./Paris.jpg);
-                background-size: 100%;
-                background-attachment: cover;
-                background-position: center;
-            }
-            .africa {
-                background-image: url(./Africa.jpg);
-                background-size: 100%;
-                background-attachment: cover;
-                background-position: center;
-            }
-            .asia {
-                background-image: url(./Asia.jpg);
-                background-size: 100%;
-                background-attachment: cover;
-                background-position: center;
-            }  
-            .america {
-                background-image: url(America.jpg);
-                background-size: 100%;
-                background-attachment: cover;
-                background-position: center;
-            }  
-            .australia {
-                background-image: url(./Australia.jpg);
-                background-size: 100%;
-                background-attachment: cover;
-                background-position: center;
-            }
+        .Quizz {
+            display: none;
+        }
+           
         }
         
-            .footer {
-                height: 5rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background: #018c9b;
-                color:#F9EDC8 ;
-            }
-    }
+    
+    
