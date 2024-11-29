@@ -145,12 +145,13 @@ h1 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border: 3px solid #4f3f34;
-    border-radius: 50px;
-    background: #f9edc8d7;
-    padding: 1rem 0 2rem;
     }
-    
+    .jeu {
+        border: 3px solid #4f3f34;
+        border-radius: 50px;
+        background: #f9edc8d7;
+        padding: 1rem 0 2rem;
+    }
     .question {
         min-width: 68vh;
         height: 15rem;
