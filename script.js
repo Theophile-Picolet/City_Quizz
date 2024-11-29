@@ -28,13 +28,11 @@ accountButton.addEventListener("click", function () {
 const questionsEurope = [
     {
         question : "Quelle expression est consacrée par le traité de Maastricht ?",
-        _reponses : ["la culture eurasiatique", "la diversité culturelle", "la culture générale", "les droits de l'Homme"],
-        get reponses(){
-            return this._reponses;
-        },
-        reponseCorrecte() {
-            return this._reponses[1];
-        } //attention : distinguer le numéro de la réponse et son index
+        reponse1 :"la culture eurasiatique", 
+        reponse2 : "la diversité culturelle", 
+        reponse3 : "la culture générale", 
+        reponse4 : "les droits de l'Homme",
+        reponseCorrecte : "la diversité culturelle"
     },
     {
         question : "l'Union europééenne mène des actions militaires ... :",
@@ -64,14 +62,21 @@ const questionsEurope = [
 const main = document.querySelector(".main");
 const europe = document.querySelector(".europe");
 const reponsesEurope = [document.querySelectorAll(".qE.button")]
-//console.log(reponsesEurope);
+console.log(reponsesEurope);
+//console.log("reponsesEurope[1]"+reponsesEurope[1]);
+//let bouton =0;
+//for ( i=0; i<reponsesEurope.length; i++) {
+//  bouton[i] = reponsesEurope[i];
+//  console.log("bouton[i]" +bouton[i])};
+
 europe.addEventListener("click", function () {
   main.style.display = "none";
   quiz.style.display = "flex";
   qE.textContent = questionsEurope[0].question;
   //for (i=0; i<reponsesEurope.length; i++) {
-    reponsesEurope[0].innerHTML = questionsEurope[0].reponses[0];
-    }
+  //reponsesEurope[0].textContent = questionsEurope[0].reponses[0];
+  }
+  
 //}
 );
 const asia = document.querySelector(".asia");
