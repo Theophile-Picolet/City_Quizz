@@ -77,8 +77,8 @@ a:hover {
     font-weight: 500;
     padding-bottom: 1rem;
     color: #F9EDC8;
-    text-shadow: #544135 5px 5px, #4f3f3400 -5px 5px, #4f3f3400 -5px -5px, #4f3f3400 5px -5px;
-    letter-spacing: 5px
+    text-shadow: #544135 1x 1px, #4f3f34 -1px 1px, #4f3f34 -1px 1px, #4f3f34 1px -1px;
+    letter-spacing: 1px
  }
 
 .main {
@@ -94,7 +94,7 @@ a:hover {
       font-size: 2rem;
     }
   }
-}
+
 
 .button .baseline {
   display: flex;
@@ -333,11 +333,11 @@ h1 {
          }
         
         .main {
-            display: none; 
+            display: flex; 
         }
         
         .Quizz {
-            display: flex;
+            display: none;
         }
            
         }
