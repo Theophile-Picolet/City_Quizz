@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-family: "Source Sans 3", sans-serif;
+}
+body {
+            /* background: linear-gradient(#00234bd3, #00234bb1); */
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+    padding: 1rem;
+        background: linear-gradient(#00162e, #00234b95);
+    height: 19rem;
+    width: auto;
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        color: #F9EDC8;
+        padding-bottom: 1rem;
+        .logo img {
+            opacity: 0.7;
+            width:5rem;
+            height: 5rem;
+            box-shadow: rgba(5, 5, 5, 0.372) 0px 4px 8px, rgb(0, 0, 0) 10px 7px 13px -6px, rgba(2, 2, 2, 0.172) 0px -6px 0px inset;
+            border-radius: 100%;  
+        }
+        .account {
+            font-size: 1rem;
+            padding: 1rem 1.5rem;
+            background: #F9EDC8;
+            color: #4f3f34 ;
+            font-weight: 700;
+            border: 3px solid #4f3f34;
+            border-radius: 25px;
+            box-shadow: rgba(5, 5, 5, 0.678) 0px 4px 8px, rgba(0, 0, 0, 0.39) 10px 7px 13px -6px, rgba(2, 2, 2, 0.175) 0px -6px 0px inset; 
+        }  
+    }
+ }
+
+.baseline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;  
+ }
+
+.baseline {
+  color: #f9edc8;
+  letter-spacing: 4px;
+  text-shadow: #00162e 7px 7px, #00162e  7px 7px, #00162e  7px  7px,
+    #00162e 7px  7px;
+}
+
+.baseline h1 {
+font-size: 4.5rem;
+font-weight: 600;
+letter-spacing: 5px;
+}
+
+.baseline .user {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-shadow: #00162e 4px 4px, #00162e  4px 4px, #00162e  4px  4px,
+    #00162e 4px  4px;
+}
+
+
+.main {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#00234b5b, #00234b5b), url(./background_projet1.jpeg);
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.Quizz {
+    margin: 0;
+    height: 40rem;
+    background-image: url(./WorldMap.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+    .jeu {
+        border: 3px solid #4f3f34;
+        border-radius: 50px;
+        background: #f9edc8d7;
+        padding: 1rem 0 2rem;
+    }
+    .question {
+        min-width: 68vh;
+        height: 15rem;
+        text-align: center;
+        padding-top: 2rem;
+        color: #4f3f34;
+        font-size: 1.5rem;
+
+    }
+    .reponse {
+        min-width: 68vh;
+        height: 10rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 1fr;
+        padding: 0 4rem;
+        justify-items: center;
+        align-items: center;
+        
+        button {
+            width: 7rem;
+            height: 3rem;
+            background: #4f3f34;
+            border-radius: 15px;
+            box-shadow: rgba(5, 5, 5, 0.318) 0px 4px 8px, rgba(0, 0, 0, 0.27) 10px 7px 13px -6px, rgba(2, 2, 2, 0.175) 0px -6px 0px inset;
+            color: #F9EDC8;
+        }
+    }
+    .aside {
+        min-width: 68vh;
+    display: flex;
+    height: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+    .timer, .point {
+        width: 50px;
+        color: #018c9b;
+        font-size: 2rem; 
+    }
+   
+ }
+
+
+.container {
+  width: auto;
+  height: auto;
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10rem;
+  }
+
+section {
+        margin: 0;
+        width: 350px;
+        height: 195px;
+        text-align: center;
+        font-size: 5rem;
+        color: rgb(255, 255, 255);
+        font-weight: 50;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #4f3f34;
+        border-radius: 30px;
+        box-shadow: rgb(5, 5, 5) 0px 4px 8px, rgb(0, 0, 0) 10px 7px 13px -6px, rgba(2, 2, 2, 0.357) 0px -6px 0px inset;
+        p {
+            font-size: 4rem;
+            letter-spacing: 5px;
+            text-shadow: #000000 2px 2px, #010101 -2px 2px, #000000 -2px -2px, #000000 2px -2px;
+        }
+}
+
+
+    .europe {
+        background-image: url(./Paris.jpg);
+        background-size: 100%;
+        background-attachment: cover;
+        background-position: center;
+    }
+    .africa {
+        background-image: url(./Africa.jpg);
+        background-size: 100%;
+        background-attachment: cover;
+        background-position: center;
+    }
+    .asia {
+        background-image: url(./Asia.jpg);
+        background-size: 100%;
+        background-attachment: cover;
+        background-position: center;
+    }  
+    .america {
+        background-image: url(America.jpg);
+        background-size: 100%;
+        background-attachment: cover;
+        background-position: center;
+    }  
+    .australia {
+        background-image: url(./Australia.jpg);
+        background-size: 100%;
+        background-attachment: cover;
+        background-position: center;
+    }
+
+
+    .footer {
+        background: linear-gradient(#00234b7b, #001732);
+        color:#F9EDC8 ;
+        height: 6rem;
+        h2 { 
+            text-align: center;
+            height: 1rem;
+            padding-top: 1rem;
+        }
+        div {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 2rem;
+        }
+    }
+
+
+    @media only screen and (min-width:700px) {
+
+        .header {
+            height: 24rem;
+            width: auto;
+            nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                gap: 70rem;
+                width: 100%;
+                color: #F9EDC8;
+                .account {
+                    font-size: 1.5rem;
+                    padding: 1rem 2rem;
+                }      
+            }
+         }
+
+         .header nav {
+            padding-top: 2rem;
+            padding-bottom: 0;
+         }
+
+        .baseline {
+            text-shadow: #00162e 8px 8px, #00162e  8px 8px, #00162e  8px  8px,
+            #00162e 8px  8px
+        }
+
+         .baseline div {
+            font-size: 2rem;
+            padding: 1rem 0;
+            letter-spacing: 4px;
+         }
+        
+         .baseline h1 {
+            font-size: 6rem;
+            font-weight: 500;
+            letter-spacing: 10px;
+            padding: 0;
+         }
+        
+        .main {
+            display: flex; 
+        }
+        
+        .Quizz {
+            display: none;
+        }
+    } 
+        
+        
+    
+    
